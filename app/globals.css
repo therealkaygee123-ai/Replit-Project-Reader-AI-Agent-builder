@@ -1,0 +1,162 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 2.5rem 3rem 1rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.2rem;
+}
+
+.app-main {
+  padding: 1.5rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 1rem 3rem 2rem;
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #2563eb;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.report-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.report ul,
+.report ol {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 0;
+}
+
+.notes {
+  margin-top: 1.5rem;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.placeholder {
+  text-align: center;
+  color: #6b7280;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.agent-panel {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.agent-panel textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.agent-panel button {
+  align-self: flex-start;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.agent-panel button:disabled {
+  background: #93c5fd;
+  cursor: default;
+}
+
+.agent-output pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 12px;
+  overflow: auto;
+  font-size: 0.85rem;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.muted {
+  color: #6b7280;
+}
